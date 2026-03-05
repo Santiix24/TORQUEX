@@ -341,23 +341,23 @@ export function Prototype() {
 
               {/* Floating Enhanced Badge */}
               <motion.div 
-                className="absolute -bottom-6 -left-6 bg-gradient-to-br from-gray-900 to-black border-2 border-red-600 rounded-2xl p-6 shadow-2xl backdrop-blur-sm"
-                initial={{ opacity: 0, y: 20 }}
+                className="absolute -top-4 -right-4 bg-gradient-to-br from-gray-900 to-black border-2 border-red-600 rounded-2xl p-4 shadow-2xl backdrop-blur-sm"
+                initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1 }}
-                whileHover={{ scale: 1.1, rotate: 5 }}
+                whileHover={{ scale: 1.1, rotate: -5 }}
               >
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-3">
                   <motion.div 
-                    className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center"
+                    className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center"
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   >
-                    <Award className="w-6 h-6 text-white" />
+                    <Award className="w-5 h-5 text-white" />
                   </motion.div>
                   <div>
-                    <div className="text-2xl font-bold text-white">+15</div>
-                    <div className="text-xs text-gray-400">Premios Ganados</div>
+                    <div className="text-xl font-bold text-white">+15</div>
+                    <div className="text-xs text-gray-400">Premios</div>
                   </div>
                 </div>
               </motion.div>
